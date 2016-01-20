@@ -1,0 +1,36 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.myriadlights.user-domain</groupId>
+  <artifactId>signup-services-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>signup-services-parent</name>
+  <url>http://maven.apache.org</url>
+
+  <modules>
+      <module>signup-service-client</module>
+      <module>signup-service-contract</module>
+      <module>signup-service-data-model</module>
+      <module>signup-service-service</module>
+      <module>signup-service-notifications</module>
+      <module>signup-service-functional-tests</module>
+      <module>signup-service-database</module>
+      <module>signup-service-documentation</module>
+  </modules>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>3.8.1</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+</project>
